@@ -7,7 +7,6 @@ import com.application.weatherapp.model.weather.WeatherEntity
 import com.application.weatherapp.network.WeatherApi
 import com.github.harmittaa.koinexample.networking.Resource
 import com.github.harmittaa.koinexample.networking.ResponseHandler
-import kotlinx.coroutines.Delay
 import kotlinx.coroutines.delay
 
 class WeatherRepository(

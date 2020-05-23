@@ -29,7 +29,7 @@ private val loadFeature by lazy {
             listOf(viewModelModule,
                    repositoryModule,
                    weatherAppModule,
-                    networkModule,
+                   networkModule,
                    uiHelperModule)
     )
 }
