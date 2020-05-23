@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.application.weatherapp.ui.viewmodel.WeatherViewModel" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    style="@style/constrainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.WeatherFragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputxt_cityname"
+        style="@style/MatchWidth"
+        android:textColorHint="@color/colorPrimary"
+        app:errorTextAppearance="@style/ErrorTextInputLayout"
+        app:hintTextAppearance="@style/TextInputLabel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/edt_name"
+            style="@style/MatchWidth"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="@string/hint_city_name"
+            android:inputType="text"
+            android:minHeight="@dimen/dimen_48dp"
+            android:textColor="@color/colorEdiText"
+            android:textColorHint="@color/colorEdiTextHint"
+            android:textSize="@dimen/text_size_16sp"
+            android:theme="@style/TextInputLabel" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_enter"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/selector_green_btn"
+        android:text="@string/enter"
+        android:textAllCaps="false"
+        android:textColor="@drawable/text_green_selector"
+        android:textSize="@dimen/text_size_14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputxt_cityname" />
+
+    <ProgressBar
+        android:id="@+id/pb_fetch_data"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylv_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingBottom="@dimen/dimen_150dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_enter" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
