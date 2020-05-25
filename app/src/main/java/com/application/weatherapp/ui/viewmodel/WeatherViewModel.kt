@@ -6,8 +6,8 @@ import androidx.lifecycle.liveData
 import androidx.lifecycle.switchMap
 import com.application.weatherapp.base.BaseViewModel
 import com.application.weatherapp.model.weather.WeatherEntity
+import com.application.weatherapp.network.Resource
 import com.application.weatherapp.repository.weather.WeatherRepository
-import com.github.harmittaa.koinexample.networking.Resource
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

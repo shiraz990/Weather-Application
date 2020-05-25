@@ -1,4 +1,4 @@
-package com.github.harmittaa.koinexample.networking
+package com.application.weatherapp.network
 
 data class Resource<out T>(val status: Status, val data: T?, val message: String?) {
     companion object {

@@ -1,4 +1,4 @@
-package com.github.harmittaa.koinexample.networking
+package com.application.weatherapp.network
 
 enum class Status {
     SUCCESS,

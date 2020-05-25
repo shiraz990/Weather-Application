@@ -4,9 +4,9 @@ import com.application.weatherapp.BuildConfig.API_KEY
 import com.application.weatherapp.dataBase.WeatherDAO
 import com.application.weatherapp.model.weather.Weather
 import com.application.weatherapp.model.weather.WeatherEntity
+import com.application.weatherapp.network.Resource
+import com.application.weatherapp.network.ResponseHandler
 import com.application.weatherapp.network.WeatherApi
-import com.github.harmittaa.koinexample.networking.Resource
-import com.github.harmittaa.koinexample.networking.ResponseHandler
 import kotlinx.coroutines.delay
 
 class WeatherRepository(

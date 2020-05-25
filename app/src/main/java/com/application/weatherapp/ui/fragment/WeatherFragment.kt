@@ -18,13 +18,12 @@ import com.application.weatherapp.databinding.FragmentViewBinding
 import com.application.weatherapp.helper.UiHelper
 import com.application.weatherapp.model.weather.Weather
 import com.application.weatherapp.model.weather.WeatherEntity
+import com.application.weatherapp.network.Resource
+import com.application.weatherapp.network.Status
 import com.application.weatherapp.ui.activity.MainActivity
 import com.application.weatherapp.ui.adapter.WeatherAdapter
 import com.application.weatherapp.ui.viewmodel.WeatherViewModel
-import com.github.harmittaa.koinexample.networking.Resource
-import com.github.harmittaa.koinexample.networking.Status
 import kotlinx.android.synthetic.main.fragment_view.*
-import kotlinx.coroutines.delay
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.util.ArrayList

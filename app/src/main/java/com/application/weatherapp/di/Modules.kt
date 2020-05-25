@@ -2,16 +2,13 @@ package com.application.weatherapp.di
 
 import androidx.room.Room
 import com.application.weatherapp.BuildConfig
-import com.application.weatherapp.BuildConfig.API_KEY
 import com.application.weatherapp.dataBase.WeatherDatabase
 import com.application.weatherapp.helper.UiHelper
-import com.application.weatherapp.model.weather.Weather
+import com.application.weatherapp.network.ResponseHandler
 import com.application.weatherapp.network.WeatherApi
 import com.application.weatherapp.repository.weather.WeatherRepository
 import com.application.weatherapp.ui.viewmodel.WeatherViewModel
 import com.application.weatherapp.util.Constants.Companion.WEATHER_DATABASE_NAME
-import com.github.harmittaa.koinexample.networking.Resource
-import com.github.harmittaa.koinexample.networking.ResponseHandler
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.androidx.viewmodel.dsl.viewModel

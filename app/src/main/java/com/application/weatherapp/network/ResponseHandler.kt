@@ -1,4 +1,4 @@
-package com.github.harmittaa.koinexample.networking
+package com.application.weatherapp.network
 
 import retrofit2.HttpException
 import java.lang.Exception
